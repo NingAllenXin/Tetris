@@ -18,7 +18,9 @@ If the button “QUIT” is pressed, the program terminates
 
 •	Add the following constants which could be adjusted as needed in the indicated ranges: 
 o	M – scoring factor (range: 1-10).
+
 o	N – number of rows required for each Level of difficulty (range: 20-50).
+
 o	S – speed factor (range: 0.1-1.0).
 
 •	When any horizontal row of squares R has no hole, i.e. all the squares in R are parts of some shapes with colors, R is removed and all the rows above R move one square down, Lines = Lines + 1; Score = Score + Level x M. 
@@ -30,6 +32,9 @@ o	S – speed factor (range: 0.1-1.0).
 •	If the cursor is inside the falling shape F (in PAUSE mode), F will be changed to one of the shapes different from F and that currently inside “Next shape”, Score = Score - Level  x M. You should use “Point-Inside-Polygon” test algorithm to detect the cursor.
 
 •	Create a user-friendly interface so that various parameters could be adjusted, using GUI widgets of your choice (e.g. a slider for M), to suit different user groups:
+
 o	Constants M, N, and S are individually adjustable.
-o	The width and height of “Main area” can be adjusted (beyond 10 x 20 squares).调小blocksize
+
+o	The width and height of “Main area” can be adjusted (beyond 10 x 20 squares).
+
 o	The size of the square is adjustable (e.g. enlarged for elderly players).
